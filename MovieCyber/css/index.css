@@ -10,3 +10,38 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #717171;
 }
+/* line style  */
+.line::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  display: block;
+  box-shadow: 0 0 20px 0;
+  transition: 0.5s;
+}
+
+.line:hover::after {
+  width: 100%;
+}
+
+.line.active::after {
+  width: 100%;
+}
+
+/* HEADER  */
+head p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#movieCyber .navbar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#movieCyber .navbar-nav .nav-link {
+  color: white;
+  letter-spacing: 3px;
+  line-height: 0.8rem;
+  padding: 20px 24px;
+}
