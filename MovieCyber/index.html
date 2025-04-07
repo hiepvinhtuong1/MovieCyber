@@ -36,19 +36,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- VENOBOX CSS  -->
+     <link rel="stylesheet" href="./css/venobox.min.css">
+
     <!-- Index CSS  -->
-    <link rel="stylesheet" href=".//css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- HEADER  -->
-    <header class="container">
+    <header class="container-md">
       <p class="text-white text-lg-end mb-0">
         <i class="fa-solid fa-phone"></i>
         <span class="mx-3 border-end pe-2">096.105.1014</span>
         <i class="fa fa-search"></i>
       </p>
 
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-md ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.svg" alt="logo" />
@@ -62,7 +65,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon1">
+              <i class="fa fa-bars"></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="movieCyber">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -1019,21 +1024,120 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="comingSoon__video">
-              <img class="" src="./img/slide-3-video.png" alt="">
-              <i class="fa fa-play"></i>
-            </div>
+            <a class="my-video-links" data-vbtype="video" href="https://youtu.be/tHztt5uCULQ?si=7TE-2k6MCaQzb8nh"> 
+              <div class="comingSoon__video">
+                <img class="" src="./img/slide-3-video.png" alt="">
+                <i class="fa fa-play"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- MOVIELIST  -->
-    <section class="movieList"></section>
+    <section class="movieList section">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid " src="./img/movie-8.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-9.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid " src="./img/movie-11.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid " src="./img/movie-12.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid " src="./img/movie-13.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid " src="./img/movie-14.jpg" alt="">
+              <div class="movieList__overplay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT  -->
-    <section class="contact"></section>
+    <section class="contact section">
+      <div class="contact__content">
+        <p>Need help? Contact our support team on</p>
+        <p>
+          <a href="tel:0961051014">096 105 1014</a>
+        </p>
+      </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="row section">
+          <div class="col-3">
+            <h3>GET IN TOUCH</h3>
+            <ul>
+              <li><a href="#"></a>FAQs</li>
+              <li><a href="#"></a>Give us facebook</li>
+              <li><a href="#"></a>Contact us</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>ABOUT MOIVE STAR</h3>
+            <ul>
+              <li><a href="#"></a>About us</li>
+              <li><a href="#"></a>Find us</li>
+              <li><a href="#"></a>Schedule</li>
+              <li><a href="#"></a>News</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>LEGAL STUFF</h3>
+            <ul>
+              <li><a href="#"></a>Terms & Conditions</li>
+              <li><a href="#"></a>Privacy policy</li>
+              <li><a href="#"></a>Cookie policy</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>CONNECT WITH US</h3>
+            <ul>
+              <li><a href="#"></a><i class="fab fa-facebook"></i> Facebook</li>
+              <li><a href="#"></a><i class="fab fa-twitter"></i> Twitter</li>
+              <li><a href="#"></a><i class="fab fa-google-plus-g"></i> Google +</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>2020 Movie Cyber / Cybersoft</p>
+        </div>
+      </div>
+
+    </footer>
 
     <button id="backToTop" class="back-to-top">
       <i class="fa fa-arrow-up"></i>
@@ -1045,6 +1149,15 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+
+    <!-- VENOBOX JS  -->
+     <script src="./js/venobox.min.js"></script>
+     <script>
+      new VenoBox({
+        selector: '.my-video-links',
+    });
+     </script>
 
     <!-- MAIN JS  -->
      <!-- gán sự kiện vào cho thanh trượt header khi đến một vị trí nhất định sẽ từ từ hạ xuống  -->
