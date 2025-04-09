@@ -192,6 +192,31 @@ head p {
   color: white;
 }
 
+#carouselMovie {
+  height: 650px;
+}
+
+#carouselMovie .carousel-inner {
+  height: 100%;
+}
+
+#carouselMovie .carousel-item {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#carouselMovie .carousel-item:first-child {
+  background-image: url(../img/hero-1.jpg);
+}
+
+#carouselMovie .carousel-item:nth-child(2) {
+  background-image: url(../img//hero-2.jpg);
+}
+
+#carouselMovie .carousel-item:nth-child(2) {
+  background-image: url(../img//hero-3.jpg);
+}
 /* B1: Xây dựng overplay phủ lên thẻ cha (button) */
 .movieCarousel_trailer button::before {
   content: "";
@@ -621,5 +646,18 @@ footer a:hover {
 
   #movieCyber .navbar-nav .active .nav-link {
     color: #ec7532;
+  }
+
+  /* CAROUSEL  */
+  #carouselMovie .carousel-item .carousel-caption h2 {
+    font-size: 2.4rem;
+  }
+
+  /* SHOWTIME  */
+  .showTimes .nav-tabs .nav-link {
+    font-size: 16px;
+  }
+  .showTimes .nav-tabs .nav-link span {
+    padding: 10px 20px;
   }
 }
